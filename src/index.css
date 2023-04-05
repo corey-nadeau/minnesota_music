@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.artist-header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgb(0,0,0) 40%);
+    
+    align-items: flex-end;
+}
+
+td,th{
+    border: 1px solid#dddd;
+    text-align: center;
+    padding: 12px;
+    
+}
+
+th {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.opposite-fade {
+    background-color: black;
+    color: white;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 40%);
+    
+}
+
+.concerts-header {
+    background-color: black;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgb(0,0,0) 40%);
+    
+}
+
+.double-fade {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 40%);
+    background-color: black;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgb(0,0,0) 40%);
+}
+
+.wishlist-fade{
+    background: linear-gradient(to bottom, rgb(186, 194, 201), rgba(0, 0, 0, 0.767))
+}
+
+.showfeats {
+    z-index: 1;
+    height: 19em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 3em;
+    text-shadow: -1px 1px 2px #000,
+                  1px 1px 0 #000,
+                  1px -1px 0 #000,
+                  -1px -1px 0 #000;
+}
+
+.cell {
+    size: 1em;
+}
+
+/* *{
+    border: 1px solid red
+}  */
