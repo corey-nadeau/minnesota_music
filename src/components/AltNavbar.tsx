@@ -29,21 +29,23 @@ function AltNavbar() {
     }
 
   return (
-    <nav className="flex flex-col items-center p-7 opposite-fade w-full fixed h-40">
-        <div className="flex items-center flex-shrink-0 text-white mr-6 pl-7">
-            <Link to='/' className='text-4xl hover:text-black bg-red-600 rounded-2xl p-3 opacity-70 '>Minneapolis Music</Link>
-        </div>
-        <div className="block">
+    <nav className="flex flex-col p-7 opposite-fade w-full fixed h-40 z-10">
+        <div className="flex flex-shrink-0 text-white">
+           
+            <div className=' pl-3.5 '>
+            <Link to='/' className='text-4xl hover:text-black bg-red-600 rounded-2xl p-3 opacity-70'>Minneapolis Music</Link>
+            </div>
             <button 
                 onClick={dropDown}
-                className="flex items-center px-3 py-2 text-white text-5xl
-                 hover:text-black hover:border-black w-20 h-20" 
-                >
-                    <i className="fa-solid fa-bars"></i>
+                className="flex text-red-500 hover:text-white text-5xl w-20 h-20 pl-10" 
+                ><i className="fa-solid fa-bars"></i>
             </button>
         </div>
+        <div className="block">
+            
+        </div>
         { isVisible ? (
-            <div className='items-center opposite-fade rounded-3xl'>
+            <div className='items-center opposite-fade rounded-3xl -mt-2'>
                 <div className='text-sm lg:flex-grow px-14'>
                     <Button className='p-3 m-5 bg-black hover:bg-white justify-center opposite-fade rounded-3xl'>
                         <div>
@@ -58,6 +60,30 @@ function AltNavbar() {
                             <Link to='/wishlist' onClick={ clicked } className='flex place-items-center mt-4 lg:inline-block lg:mt-0
                             text-white'>
                                 Wishlist
+                            </Link>
+                        </div>
+                    </Button>
+                    <Button className='p-3 m-5 bg-black hover:bg-white justify-center opposite-fade rounded-3xl'>
+                        <div>
+                            <Link to='/wishlist' onClick={ clicked } className='flex place-items-center mt-4 lg:inline-block lg:mt-0
+                            text-white'>
+                                Events
+                            </Link>
+                        </div>
+                    </Button>
+                    <Button className='p-3 m-5 bg-black hover:bg-white justify-center opposite-fade rounded-3xl'>
+                        <div>
+                            <Link to='/wishlist' onClick={ clicked } className='flex place-items-center mt-4 lg:inline-block lg:mt-0
+                            text-white'>
+                                Shop
+                            </Link>
+                        </div>
+                    </Button>
+                    <Button className='p-3 m-5 bg-black hover:bg-white justify-center opposite-fade rounded-3xl'>
+                        <div>
+                            <Link to='/wishlist' onClick={ clicked } className='flex place-items-center mt-4 lg:inline-block lg:mt-0
+                            text-white'>
+                                Local Artists
                             </Link>
                         </div>
                     </Button>

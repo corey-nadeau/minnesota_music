@@ -1,7 +1,8 @@
 import Background from '../assets/images/bg2.jpg'
 import ConcertTable from '../components/ConcertTable'
 import Shop from '../components/Shop'
-import LocalArtists from '../components/LocalArtists'
+import AltSpotify from '../api/AltSpotify'
+import Footer from '../components/Footer'
 
 
 
@@ -20,15 +21,17 @@ function Home() {
           <section>
             <h1 className="showfeats ">Welcome to Minneapolis</h1>
           </section>
-{/* Local Artist area */}
-        <LocalArtists/>
           </div>
       </div>
-      <div>
+        <div>
+{/* Local artist/ spotify */}
+          <AltSpotify/>
 {/* concert table */}
-        <ConcertTable/>
+            <ConcertTable/>
 {/* shop */}
-        <Shop/>
+          <Shop/>
+{/* Footer */}
+        <Footer/>
       </div>
     </div>
   )

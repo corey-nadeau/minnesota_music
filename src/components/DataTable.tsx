@@ -4,7 +4,8 @@ import Modal from './Modal'
 import { server_calls } from '../api/server';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useGetData } from '../custom-hooks/FetchData';
-
+import Footer from './Footer';
+import bg2 from '../assets/images/bg.jpg'
 
 
 const columns: GridColDef[] = [
@@ -33,8 +34,8 @@ function DataTable() {
     }
 
   return (
-    <>
-        <Modal 
+    <div style={{ backgroundImage: `url(${ bg2 })`}}>
+        <Modal
             id={selectionModel}
             open={open}
             onClose={handleClose}
@@ -47,7 +48,7 @@ function DataTable() {
         <div className={ open ? "hidden" : "container mx-20 my-5 flex flex-col pl-52"}
           style={{ height: 700, width: '100%' }}
           >
-            <h2 className="p-3 bg-red-400 text-black text-center text-2xl my-2 mx-20 pl-14 rounded-3xl">My Concert Wishlist</h2>
+            <h2 className="p-3 bg-red-400  text-center text-2xl my-2 mx-20 pl-14 rounded-3xl">My Concert Wishlist</h2>
             <DataGrid rows={contactData} columns={columns}
               checkboxSelection={true} 
               onRowSelectionModelChange={ (item:any) => {
@@ -55,7 +56,9 @@ function DataTable() {
             }}
             />
         </div>
-    </>
+        <Footer/>
+    </div>
+    
   )
 }
 

@@ -1,9 +1,9 @@
 function ConcertTable() {
     const fetchata = async () => {
         const response = await fetch(
-            'https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&dmaId=336&size=10&apikey=5GKKVRzQfiGWhRD7SAwRA3PvB0YQocrM');
+            'https://app.ticketmaster.com/discovery/v2/events.json?classificationName=music&dmaId=336&size=6&apikey=5GKKVRzQfiGWhRD7SAwRA3PvB0YQocrM');
             let data = await response.json();
-            console.log(data)
+            // console.log(data)
 
         //    get events
             document.getElementById('event1').innerHTML= JSON.stringify(data._embedded.events[5].name).replace(/['"]+/g, '')
@@ -35,7 +35,8 @@ function ConcertTable() {
   return (
     
     <div className='text-white bg-gradient-to-r from-black to-gray-600 pr-10 pl-5'>
-    <h1 className=' text-center text-3xl py-12 pt-24'>Upcoming Events in Minneapolis</h1>
+    <h1 className=' text-center text-5xl py-12 pt-24'>Upcoming Events in Minneapolis</h1>
+    <h2 className="text-center pb-5">Powered by Ticketmaster</h2>
     <table className=' w-full '>
       <thead>
         <tr>
