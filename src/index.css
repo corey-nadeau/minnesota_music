@@ -7,7 +7,7 @@
 
 }
 .text-area{
-    background-color: rgba(0, 0, 0, 0.568);
+    background-color: rgba(0, 0, 0, 0.527);
 }
 
 .fill {
@@ -61,10 +61,7 @@ sbutton:hover {
     color: white;
     display: flex;
     font-size: 3em;
-    text-shadow: -1px 1px 2px #000,
-                  1px 1px 0 #000,
-                  1px -1px 0 #000,
-                  -1px -1px 0 #000;
+    text-shadow: -1px 1px 2px #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 
 .background {
@@ -80,7 +77,7 @@ sbutton:hover {
     display: flex;
     justify-content: center;
     height: 100px;
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgb(0,0,0) 40%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0) 40%);
     
     align-items: flex-end;
 }
@@ -118,20 +115,6 @@ th {
 
 .wishlist-fade{
     background: linear-gradient(to bottom, rgb(186, 194, 201), rgba(0, 0, 0, 0.767))
-}
-
-.showfeats {
-    z-index: 1;
-    height: 19em;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    display: flex;
-    font-size: 3em;
-    text-shadow: -1px 1px 2px #000,
-                  1px 1px 0 #000,
-                  1px -1px 0 #000,
-                  -1px -1px 0 #000;
 }
 
 .cell {

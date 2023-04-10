@@ -1,7 +1,7 @@
 import Background from '../assets/images/bg2.jpg'
-import ConcertTable from '../components/ConcertTable'
+import ConcertTable from '../api/ConcertTable'
 import Shop from '../components/Shop'
-import AltSpotify from '../api/AltSpotify'
+import AltSpotify from '../api/Spotify'
 import Footer from '../components/Footer'
 
 
@@ -10,10 +10,10 @@ import Footer from '../components/Footer'
 
 function Home() {
   return (
-    <div>
+    <div id='top'>
 {/* Landing area */}
       <div 
-          style={{ backgroundImage: `url(${ Background })`}} 
+          style={{ backgroundImage: `url(${ Background })`}}
           className='flex flex-row justify-center mx-auto bg-cover bg-fixed'>
       <div className='flex place-items-center h-screen'>
       </div>
@@ -31,7 +31,7 @@ function Home() {
 {/* shop */}
           <Shop/>
 {/* Footer */}
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </div>
   )
