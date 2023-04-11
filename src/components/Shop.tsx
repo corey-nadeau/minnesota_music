@@ -18,7 +18,7 @@ function Shop() {
                 </div>
                 <div className="p-36 text-white text-center">
                     <a href="https://open.spotify.com/" target="_blank"><img src={Spotify} alt="spotify" className="rounded-full border-2 p-2 hover:border-red-500 hover:blur-sm"></img>
-                    <h3 className="pt-8 text-4xl hover:text-red-500">Music from Spotify</h3></a>
+                    <h3 className="pt-8 text-4xl hover:text-red-500">Check them out on Spotify</h3></a>
                 </div>
             </div>
         </div>

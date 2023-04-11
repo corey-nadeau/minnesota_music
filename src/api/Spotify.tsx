@@ -111,11 +111,15 @@ function stopSnippet(){
         <h2>Artists from Minnesota</h2>
     </div>
     
+    
     <div className='w-full bg-black text-center'>
-        <a className=" bg-black text-white text-center w-full text-2xl">Click an image to hear their music!</a>
+        <a className=" bg-black text-white text-center w-full text-2xl">Click an image to preview their music!</a>
     </div>
+    <div className='w-full bg-black text-center pt-3'>
+        <a className=" bg-black text-white text-center w-full text-sm">Powered by Spotify</a>
+    </div>  
     <div className='bg-black text-white text-center pt-10'>
-      <button onClick={stopSnippet} className=' p-1 hover:text-red-500 hover:border-red-500 border-2 text-xl'>
+      <button onClick={stopSnippet} className=' p-2 hover:text-red-500 border-white hover:border-red-500 bg-slate-700 border-2 text-xl rounded-xl'>
         STOP Music
       </button>
     </div>
@@ -128,8 +132,8 @@ function stopSnippet(){
             <div className="artist-name text-center text-2xl">
                 <h1 className='pt-10'>Bob Dylan</h1>
             </div>
-            <p  className="artist-info text-center mx-14">Bob Dylan was born on May 24, 1941 in Duluth, Minnesota. He grew up in the city of
-                    Hibbing. As a teenager, he played in various bands and with time his interest in music 
+            <p className="artist-info text-center mx-14">Bob Dylan was born on May 24, 1941 in Duluth, Minnesota. He grew up in the city of
+                    Hibbing, Minnesota. As a teenager, he played in various bands and with time his interest in music 
                     deepened, with a particular passion for American folk music and blues. One of his idols 
                     was the folk singer Woody Guthrie.
             </p>
@@ -138,6 +142,7 @@ function stopSnippet(){
                 <a href="https://www.facebook.com/bobdylan" target="_blank"><i className="fab fa-facebook hover:text-red-600 text-black"></i></a>
                 <a href="https://twitter.com/bobdylan" target="_blank"><i className="fab fa-twitter hover:text-red-600 text-black"></i></a>
                 <a href="https://www.tiktok.com/@bobdylanofficial?lang=en" target="_blank"><i className="fab fa-tiktok hover:text-red-600 text-black"></i></a>
+                <a href="https://open.spotify.com/search/bob%20dylan" target="_blank"><i className="fa-brands fa-spotify hover:text-red-600 text-black"></i></a>
             </div>
         </div>
         <div className="artist text-white w-1/3 mt-10">
@@ -157,6 +162,7 @@ function stopSnippet(){
                 <a href="https://www.facebook.com/prince" target="_blank"><i className="fab fa-facebook hover:text-red-600 text-black"></i></a>
                 <a href="https://twitter.com/prince" target="_blank"><i className="fab fa-twitter hover:text-red-600 text-black"></i></a>
                 <a href="https://www.tiktok.com/tag/prince?lang=en" target="_blank"><i className="fab fa-tiktok hover:text-red-600 text-black"></i></a>
+                <a href="https://open.spotify.com/search/prince" target="_blank"><i className="fa-brands fa-spotify hover:text-red-600 text-black"></i></a>
             </div>
         </div>
         <div className="artist text-white w-1/3 mt-10">
@@ -167,14 +173,15 @@ function stopSnippet(){
                 <h1 className='pt-10'>Yung Gravy</h1>
             </div>
             <p className="artist-info text-center mx-14">Mathew Raymond Hauri, or Yung Gravy, was born on March 19, 1996, in Rochester, 
-                    Minnesota, the United States. He is a well-known rapper, songwriter, producer, and entrepreneur who has been professionally 
-                    active since 2016, when he started uploading his music onto the online audio distribution platform, SoundCloud.
+                    Minnesota. He is a well-known rapper, songwriter, producer, and entrepreneur who has been professionally 
+                    active since 2016, when he started uploading his music onto online audio distribution platforms.
             </p>
             <div className="artist-socials text-center space-x-4 pb-20">
                 <a href="https://www.instagram.com/yunggravy" target="_blank"><i className="fab fa-instagram hover:text-red-600 text-black"></i></a>
                 <a href="https://www.facebook.com/yunggravy" target="_blank"><i className="fab fa-facebook hover:text-red-600 text-black"></i></a>
                 <a href="https://twitter.com/yunggravy" target="_blank"><i className="fab fa-twitter hover:text-red-600 text-black"></i></a>
                 <a href="https://www.tiktok.com/@yunggravy?lang=en" target="_blank"><i className="fab fa-tiktok hover:text-red-600 text-black"></i></a>
+                <a href="https://open.spotify.com/search/yung%20gravy" target="_blank"><i className="fa-brands fa-spotify hover:text-red-600 text-black"></i></a>
               
             </div>
         </div>

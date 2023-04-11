@@ -9,7 +9,8 @@ import Modal from './Modal'
 const columns: GridColDef[] = [
   { field: 'maker', headerName: 'Artist', flex: 1, headerAlign: 'left'},
   { field: 'flavor', headerName: 'Venue', flex: 1, headerAlign: 'left'},
-  { field: 'year', headerName: 'Date', flex: 1, headerAlign: 'left'},
+  { field: 'year', headerName: 'Date of Event', flex: 1, headerAlign: 'left'},
+  { field: 'rating', headerName: 'Users First Name', flex: 1, headerAlign: 'left'}
 ]
 
 function DataTable() {

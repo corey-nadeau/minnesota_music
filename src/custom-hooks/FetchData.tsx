@@ -6,14 +6,14 @@ export const useGetData = () => {
 
     async function handleDataFetch(){
         const result = await server_calls.get();
-            setData(result)
+        setData(result)
     }
 
     useEffect( () => {
         handleDataFetch();
-            }, [])
-    return { 
-        contactData, getData:handleDataFetch }
+    }, [])
+
+    return { contactData, getData:handleDataFetch }
 }
 
 

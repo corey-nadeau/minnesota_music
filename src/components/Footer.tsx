@@ -18,7 +18,7 @@ function Footer() {
             </div>
             <div className="map">
             <a href='https://www.google.com/maps/search/minneapolis+concert+venues/@44.9708971,-93.2614786,12z/data=!3m1!4b1' target="_blank">
-                <img src={map} alt="map" className="maping rounded-lg pt-12 hover:blur-sm pl-1 cursor-zoom-in"></img>
+                <img src={map} alt="map" className="maping rounded-lg pt-12 hover:blur-sm pl-1 cursor-zoom-in"></img>Minneapolis Venue Map click to zoom
                 </a>
             </div>
             <div className="footshows">
@@ -51,7 +51,7 @@ function Footer() {
                     <a href="https://www.instagram.com/meetminneapolis/" target="_blank"><p className="tiny hover:text-red-400"><i className="fab fa-instagram hover:text-red-400"></i> Instagram </p></a>
                 </div>
             </div>
-        </div>&copy;  Corey Nadeau 2023 all rights reserved, data by Spotify and Ticketmaster
+        </div>&copy; Website by Corey Nadeau 2023 all rights reserved, data by Spotify and Ticketmaster
     </footer>
     )
 }
